@@ -1,0 +1,22 @@
+function nthPrime(n) {
+  let primeList = [2];
+  let i = 3;
+  while(primeList.length < n){
+    let j = 0;
+    let isPrime = true;
+    let bound = parseInt(Math.sqrt(i));
+    while(primeList[j] <= bound){
+      if(i % primeList[j] == 0){
+        isPrime = false;
+        break;
+      }
+      j++;
+    }
+    if(isPrime){
+      primeList.push(i);
+    }
+    i+=2;
+  }
+  return primeList[primeList.length - 1];
+}
+console.log(nthPrime(10001));

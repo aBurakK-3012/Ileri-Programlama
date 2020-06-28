@@ -1,0 +1,22 @@
+Var first16valuesForMinus31Substitution = {
+0: 971,
+1: 911,
+2: 853,
+3: 797,
+4: 743,
+5: 691,
+6: 641,
+7: 593,
+8: 547,
+9: 503,
+10: 461,
+11: 421,
+12: 383,
+13: 347,
+14: 313,
+15: 281
+};
+Var isPrime = require(‘is prime’);
+For (var n in first16valuesForMinus31Substitution) {
+	Console.log(n, isPrime(first16valuesForMinus31Substitution[n]));
+}
